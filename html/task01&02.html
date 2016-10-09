@@ -4,16 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>task01</title>
-    <style>
-    img {
-        width: 300px;
-    }
-    </style>
+    <link rel="stylesheet" href="../css/task02.css">
 </head>
 
 <body>
     <header>
-        <h1>网站一级标题</h1>
+        <h1>Bai百度</h1>
         <nav>
             <ul>
                 <li><a href="#nav_link_1">导航链接一</a></li>
@@ -53,18 +49,26 @@
             </ul>
         </article>
         <article>
-            <h3>图片</h3>
+            <h2>图片</h2>
             <figure>
                 <figcaption>第一张图片</figcaption>
-                <img src="../img/1.jpg" alt="图片1">
+                <img src="../img/1.jpg" alt="图片1">               
+            </figure>
+            <figure>
                 <figcaption>第二张图片</figcaption>
-                <img src="../img/2.jpg" alt="图片2">
+                <img src="../img/2.jpg" alt="图片2">               
+            </figure>
+            <figure>
                 <figcaption>第三张图片</figcaption>
-                <img src="../img/3.jpg" alt="图片3">
+                <img src="../img/3.jpg" alt="图片3">               
+            </figure>
+            <figure>
                 <figcaption>第四张图片</figcaption>
-                <img src="../img/4.jpg" alt="图片4">
+                <img src="../img/4.jpg" alt="图片4">               
+            </figure>
+            <figure>
                 <figcaption>第五张图片</figcaption>
-                <img src="../img/5.jpg" alt="图片5">
+                <img src="../img/5.jpg" alt="图片5">               
             </figure>
         </article>
         <article>
@@ -76,7 +80,7 @@
                 <li>排名2</li>
                 <li>排名3</li>
             </ol>
-            <p>下面是一个表格，给表哥加了一个border="1"好让你看出来是一个表格</p>
+            <span>下面是一个表格，给表哥加了一个border="1"好让你看出来是一个表格</span>
             <table border="1">
                 <thead>
                     <tr>
@@ -112,34 +116,48 @@
         </article>
     </main>
     <aside id="nav_link_4">
-        <h2>这里以后是一个侧栏</h2>
-        <h2>侧栏注册窗口标题</h2>
+        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
         <form action="#">
-            <label for="email">请输入邮箱地址：</label>
-            <input type="email" id="email" placeholder="这是一个文本输入框">
-            <p>邮箱地址请按要求格式输入</p>
-            <label for="password">请输入密码：</label>
-            <input type="password" id="password" placeholder="这是一个文本输入框">
-            <label for="repassword">请重复输入密码：</label>
-            <input type="password" id="repassword" placeholder="这是一个文本输入框">
-            <p>密码请为6-16位英文或数字</p>
-            <label for="gender">性别：</label>
-            <input type="radio" id="gender" name="gender" value="man" checked>男
-            <input type="radio" id="gender" name="gender" value="woman">女
-            <label for="city">城市：</label>
-            <select name="city" id="city">
-                <option value="北京" selected>北京</option>
-                <option value="上海">上海</option>
-                <option value="杭州">杭州</option>
-                <option value="南京">南京</option>
-            </select>
-            <label for="hobby">爱好：</label>
-            <input type="checkbox" value="运动">运动
-            <input type="checkbox" value="艺术">艺术
-            <input type="checkbox" value="科学">科学
-            <label for="self-description">个人描述：</label>
-            <textarea name="self_description" id="self-description" cols="30" rows="3" placeholder="这是一个多行文本框，在这里输入个人描述"></textarea>
-            <input type="button" value="确认提交">
+            <div>
+                <label for="email">请输入邮箱地址：</label>
+                <input type="email" id="email" placeholder="这是一个文本输入框">
+                <p>邮箱地址请按要求格式输入</p>
+            </div>
+            <div>
+                <label for="password">请输入密码：</label>
+                <input type="password" id="password" placeholder="这是一个文本输入框">
+            </div>
+            <div>
+                <label for="repassword">请重复输入密码：</label>
+                <input type="password" id="repassword" placeholder="这是一个文本输入框">
+                <p>密码请为6-16位英文或数字</p>
+            </div>
+            <div>
+                <label for="gender">性别：</label>
+                <input type="radio" id="gender" name="gender" value="man" checked>男
+                <input type="radio" id="gender" name="gender" value="woman">女
+            </div>
+            <div>
+                <label for="city">城市：</label>
+                <select name="city" id="city">
+                    <option value="北京" selected>北京</option>
+                    <option value="上海">上海</option>
+                    <option value="杭州">杭州</option>
+                    <option value="南京">南京</option>
+                </select>
+            </div>
+            <div>
+                <label for="hobby">爱好：</label>
+                <input type="checkbox" value="运动">运动
+                <input type="checkbox" value="艺术">艺术
+                <input type="checkbox" value="科学">科学
+            </div>
+            <div>
+                <label for="self-description">个人描述：</label>
+                <textarea name="self_description" id="self-description" cols="30" rows="3" placeholder="这是一个多行文本框，在这里输入个人描述"></textarea>
+            </div>
+            <input class="button" type="button" value="确认提交">
+            
         </form>
     </aside>
     <footer>

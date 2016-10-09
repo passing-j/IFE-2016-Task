@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9D9797;
+    line-height: 1.75em;
+}
+
+article,
+aside {
+    box-shadow: 3px 3px 2px 2px #434141;
+}
+
+
+/*头部开始*/
+
+header {
+    height: 60px;
+    line-height: 60px;
+    background-color: #242121;
+}
+
+header h1 {
+    float: left;
+    margin-left: 30px;
+    color: #BB1F1F;
+    cursor: pointer;
+}
+
+header nav {
+    float: right;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #F56C17;
+    transition: all 0.3s ease;
+}
+
+
+/*头部结束*/
+
+
+/*主体开始*/
+
+main {}
+
+main img {
+    width: 300px;
+    margin: 20px 0 20px 0;
+}
+
+article {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFEFE;
+}
+
+article:nth-child(2) ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+main h3,
+em {
+    color: #787575;
+    margin: 10px 0 10px 0;
+}
+
+main p {
+    text-indent: 2em;
+}
+
+
+/*多张图片部分*/
+
+figure {
+    border: 1px solid gray;
+    margin: 30px 0 30px 50px;
+    width: 120px;
+    height: auto;
+    text-align: center;
+}
+
+figure figcaption {
+    font-size: 12px;
+}
+
+figure img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+
+/*表格部分*/
+
+article:nth-child(4) ol {
+    margin: 20px 0 20px 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid #CECECE;
+}
+
+table thead {
+    background-color: #141212;
+    color: white;
+}
+
+table tfoot {
+    background-color: #B8B8B8;
+}
+
+
+/*main结束*/
+
+
+/*aside开始*/
+
+aside {
+    margin: 30px 40px 20px 20px;
+    padding: 20px;
+    background-color: #FCF9F9;
+}
+
+aside h2 {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 3px solid #ccc;
+}
+
+aside form div {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+aside form label {
+    width: 35%;
+    float: left;
+    text-align: right;
+    padding-right: 15px;
+}
+
+aside form p {
+    margin-left: 35%;
+    padding-left: 15px;
+    color: #A9A5A5;
+}
+
+aside textarea {
+    width: 50%;
+    height: 100px;
+}
+
+aside .button {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #2B6FE5;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+aside .button:hover {
+    box-shadow: 3px 3px 3px #919090;
+    transition: all 0.2s ease;
+}
+
+
+/*aside结束*/
+
+
+/*footer开始*/
+
+footer {
+    background-color: #141313;
+    color: white;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+}
