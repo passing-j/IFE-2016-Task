@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+.container {
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 20px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+section {
+    border: 1px solid #999;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.middle {
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 140px;
+    font-size: 16px;
+}
+
+.middle p {
+    text-indent: 2em;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.left figure {
+    display: inline-flex;
+}
+
+.left figcaption {
+    margin-left: 20px;
+}
+
+.right {
+    width: 120px;
+    padding: 20px;
+    float: right;
+}
+
+.right img {
+    margin: 10px 0;
+}
+
+.right img:first-child {
+    margin-top: 0;
+}
+
+.right img:last-child {
+    margin-bottom: 0;
+}
