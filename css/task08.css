@@ -1,0 +1,11 @@
+body{
+	padding: 10px;
+}
+.fa{
+	padding: 10px;
+}
+.inner{
+	background-color: #eee;
+	border:1px solid #999;
+	height: 50px;
+}
