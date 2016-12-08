@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>二维数组排序</title>
+    <style>
+   ul{
+      list-style: none;
+   }
+    </style>
+</head>
+
+<body>
+    <ul id="source">
+        <li>北京空气质量：<b>90</b></li>
+        <li>上海空气质量：<b>70</b></li>
+        <li>天津空气质量：<b>80</b></li>
+        <li>广州空气质量：<b>50</b></li>
+        <li>深圳空气质量：<b>40</b></li>
+        <li>福州空气质量：<b>32</b></li>
+        <li>成都空气质量：<b>90</b></li>
+    </ul>
+    <ul id="resort"></ul>
+    <button id="sort-btn" onclick="init()">排序</button>
+    <script>
+
+    function getData(){
+      var Data = [];
+      li_list = document.getElementsByTagName('li');
+      for(let i = 0;i < li_list.length;i++){
+         var b = li_list[i].getElementsByTagName('b')[0];
+         var data = [li_list[i].innerHTML.slice(0,2),Number(b.innerHTML)];
+         Data.push(data);
+      }
+      return Data;
+    };
+    
+    function sortAqiData(Data){
+      Data.sort(function(x,y){
+         return x[1] - y[1];
+      });
+      return Data;
+    };
+    function render(Data){
+      var ul_resort = document.getElementById('resort'),
+          str_li = "";
+      for(let i = 0;i<Data.length;i++){
+         str_li += '<li>第'+(i+1)+'名：'+Data[i][0]+', 空气质量：'+Data[i][1]+'</li>';
+      }
+      ul_resort.innerHTML = str_li;
+    };
+    function btnHandle(){
+      var aqiData = getData();
+      aqiData = sortAqiData(aqiData);
+      render(aqiData);
+    };
+    function init(){
+      var btn = document.getElementById('sort-btn');
+      btn.addEventListener('click',btnHandle());
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>点击获取值</title>
+</head>
+<body>
+   <input type="text">
+   <p>你输入的值是：<span></span></p>
+   <button>click</button>
+   <script>
+   var btn = document.getElementsByTagName('button')[0];
+   btn.addEventListener('click',function(){
+      var text = document.getElementsByTagName('input')[0].value;
+      document.getElementsByTagName('span')[0].innerHTML = text;
+   });
+   </script>
+</body>
+</html>
